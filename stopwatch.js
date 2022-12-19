@@ -51,9 +51,12 @@ function updateTime(){
 }
 document.getElementById("pause").onclick= function(){
     clearInterval(timeref)
-    millisecond=0;
-    seconds=0;
-    minutes=0;
-    hours=0;
-    timeshow.innerHTML="00 : 00 : 00 : 00"
 }
+    document.getElementById("reset").onclick= function(){
+        clearInterval(timeref)
+        millisecond=0;
+        seconds=0;
+        minutes=0;
+        hours=0;
+        timeshow.innerHTML="00 : 00 : 00 : 00"
+    }
